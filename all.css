@@ -255,10 +255,16 @@ a{
     margin: 50px 0px;
 }
 .course ul li {
-    width:280px;
+    width:330px;
     text-align: center;
-    padding: 20px 20px;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.course ul li a{
+    display: block;
+    padding: 20px 20px;
+}
+.course ul li:hover {
+    box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.1) ;
 }
 .course ul li h3 {
     margin: 5px 0px;
@@ -285,19 +291,26 @@ a{
 
 /*老師介紹*/
 .course-content {
-    padding: 80px 200px;
+    padding: 80px 230px;
 }
 .teacher {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom:50px;
+    flex-wrap: wrap;
 }
 .teacher img {
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
+}
+.teacher .teacher-intro {
+    display: flex;
 }
 .teacher h2 {
     line-height: 43px;
+    margin-top: 5px;
+    margin-right: 150px;
 }
 .teacher ul li{
     margin: 10px 0px;
@@ -315,7 +328,7 @@ a{
 }
 .course-content .description ol li {
     list-style-type: decimal;
-    line-height: 20px;
+    line-height: 25px;
     padding-left: 16px;
 }
 .faq-content{
@@ -355,6 +368,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 120px 30px;
+    margin-top: 60px;
 }
 .bottom h3 {
     line-height: 56px;
