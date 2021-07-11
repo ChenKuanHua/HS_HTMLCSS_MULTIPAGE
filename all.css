@@ -168,15 +168,17 @@ a{
 .wrap {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header {
     position: absolute;
-    width: 100%;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255,255,255,0.1)
+    background-color: rgba(255,255,255,0.1);
+    width:100%;
 }
 .header h1 {
     background-image: url(images/logo.png);
